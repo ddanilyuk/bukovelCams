@@ -10,6 +10,7 @@ import UIKit
 
 class LiftDetailViewController: UIViewController, UIScrollViewDelegate {
     
+    @IBOutlet weak var navItem: UINavigationItem!
     var imageSeque = UIImage()
     var liftNameSeque = String()
 
@@ -18,12 +19,11 @@ class LiftDetailViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationController?.title = liftNameSeque
+        navItem?.title = liftNameSeque
         imageView.image = imageSeque
         scrollView.delegate = self
         if imageSeque == UIImage() {
             imageView.image = UIImage(named: "map")
-
         }
     }
     

@@ -101,7 +101,7 @@ extension AllLiftsViewController: UITableViewDelegate, UITableViewDataSource {
                 if let destination = segue.destination as? LiftDetailViewController {
                     if liftImages[indexPath.row] != nil {
                         destination.imageSeque = liftImages[indexPath.row] ?? UIImage()
-                        destination.liftNameSeque = LIFT_NAMES_SERVER[indexPath.row] ?? String()
+                        destination.liftNameSeque = LIFT_NAMES_USER[indexPath.row]
                     }
                 }
             }
