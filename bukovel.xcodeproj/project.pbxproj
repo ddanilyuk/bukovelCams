@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		5F060B3223CB4EC7001D345C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F060B3123CB4EC7001D345C /* AppDelegate.swift */; };
 		5F060B3423CB4EC7001D345C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F060B3323CB4EC7001D345C /* SceneDelegate.swift */; };
-		5F060B3623CB4EC7001D345C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F060B3523CB4EC7001D345C /* ViewController.swift */; };
+		5F060B3623CB4EC7001D345C /* AllLiftsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F060B3523CB4EC7001D345C /* AllLiftsViewController.swift */; };
 		5F060B3923CB4EC7001D345C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F060B3723CB4EC7001D345C /* Main.storyboard */; };
 		5F060B3B23CB4ECA001D345C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F060B3A23CB4ECA001D345C /* Assets.xcassets */; };
 		5F060B3E23CB4ECA001D345C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F060B3C23CB4ECA001D345C /* LaunchScreen.storyboard */; };
+		5F060B4823CB532F001D345C /* QueueTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F060B4623CB532F001D345C /* QueueTableViewCell.swift */; };
+		5F060B4923CB532F001D345C /* QueueTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5F060B4723CB532F001D345C /* QueueTableViewCell.xib */; };
+		5F060B4B23CB55F6001D345C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F060B4A23CB55F6001D345C /* UIViewExtension.swift */; };
+		5F060B4D23CC7CF8001D345C /* LiftDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F060B4C23CC7CF8001D345C /* LiftDetailViewController.swift */; };
+		5FA8AAAE23D23C8000F2FB5F /* AllCamerasViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FA8AAAD23D23C8000F2FB5F /* AllCamerasViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5F060B2E23CB4EC7001D345C /* bukovel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bukovel.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5F060B3123CB4EC7001D345C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5F060B3323CB4EC7001D345C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5F060B3523CB4EC7001D345C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5F060B3523CB4EC7001D345C /* AllLiftsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllLiftsViewController.swift; sourceTree = "<group>"; };
 		5F060B3823CB4EC7001D345C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5F060B3A23CB4ECA001D345C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5F060B3D23CB4ECA001D345C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5F060B3F23CB4ECA001D345C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F060B4623CB532F001D345C /* QueueTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueueTableViewCell.swift; sourceTree = "<group>"; };
+		5F060B4723CB532F001D345C /* QueueTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QueueTableViewCell.xib; sourceTree = "<group>"; };
+		5F060B4A23CB55F6001D345C /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		5F060B4C23CC7CF8001D345C /* LiftDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiftDetailViewController.swift; sourceTree = "<group>"; };
+		5FA8AAAD23D23C8000F2FB5F /* AllCamerasViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllCamerasViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,52 @@
 		5F060B3023CB4EC7001D345C /* bukovel */ = {
 			isa = PBXGroup;
 			children = (
+				5F060B4E23CC7D11001D345C /* ViewControllers */,
+				5F060B4523CB52F4001D345C /* QueueCell */,
 				5F060B3123CB4EC7001D345C /* AppDelegate.swift */,
 				5F060B3323CB4EC7001D345C /* SceneDelegate.swift */,
-				5F060B3523CB4EC7001D345C /* ViewController.swift */,
+				5F060B4A23CB55F6001D345C /* UIViewExtension.swift */,
 				5F060B3723CB4EC7001D345C /* Main.storyboard */,
 				5F060B3A23CB4ECA001D345C /* Assets.xcassets */,
 				5F060B3C23CB4ECA001D345C /* LaunchScreen.storyboard */,
 				5F060B3F23CB4ECA001D345C /* Info.plist */,
 			);
 			path = bukovel;
+			sourceTree = "<group>";
+		};
+		5F060B4523CB52F4001D345C /* QueueCell */ = {
+			isa = PBXGroup;
+			children = (
+				5F060B4623CB532F001D345C /* QueueTableViewCell.swift */,
+				5F060B4723CB532F001D345C /* QueueTableViewCell.xib */,
+			);
+			path = QueueCell;
+			sourceTree = "<group>";
+		};
+		5F060B4E23CC7D11001D345C /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5FA8AAAC23D23C5E00F2FB5F /* Cameras */,
+				5FA8AAAB23D23C4B00F2FB5F /* Queue */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5FA8AAAB23D23C4B00F2FB5F /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				5F060B3523CB4EC7001D345C /* AllLiftsViewController.swift */,
+				5F060B4C23CC7CF8001D345C /* LiftDetailViewController.swift */,
+			);
+			path = Queue;
+			sourceTree = "<group>";
+		};
+		5FA8AAAC23D23C5E00F2FB5F /* Cameras */ = {
+			isa = PBXGroup;
+			children = (
+				5FA8AAAD23D23C8000F2FB5F /* AllCamerasViewController.swift */,
+			);
+			path = Cameras;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +175,7 @@
 				5F060B3E23CB4ECA001D345C /* LaunchScreen.storyboard in Resources */,
 				5F060B3B23CB4ECA001D345C /* Assets.xcassets in Resources */,
 				5F060B3923CB4EC7001D345C /* Main.storyboard in Resources */,
+				5F060B4923CB532F001D345C /* QueueTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +186,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F060B3623CB4EC7001D345C /* ViewController.swift in Sources */,
+				5F060B4B23CB55F6001D345C /* UIViewExtension.swift in Sources */,
+				5FA8AAAE23D23C8000F2FB5F /* AllCamerasViewController.swift in Sources */,
+				5F060B3623CB4EC7001D345C /* AllLiftsViewController.swift in Sources */,
 				5F060B3223CB4EC7001D345C /* AppDelegate.swift in Sources */,
 				5F060B3423CB4EC7001D345C /* SceneDelegate.swift in Sources */,
+				5F060B4D23CC7CF8001D345C /* LiftDetailViewController.swift in Sources */,
+				5F060B4823CB532F001D345C /* QueueTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,7 +346,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ddanilyuk.bukovel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -312,7 +364,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ddanilyuk.bukovel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
