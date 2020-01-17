@@ -27,7 +27,9 @@ class AllCamerasViewController: UIViewController {
         getAllImages()
     }
 
-    
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationItem.largeTitleDisplayMode = .always
+    }
     
     func setupLiftImages() {
         for _ in 0..<LIFT_NAMES_SERVER.count {
@@ -45,6 +47,9 @@ class AllCamerasViewController: UIViewController {
             tableView.register(UINib(nibName: QueueTableViewCell.identifier, bundle: Bundle.main), forCellReuseIdentifier: QueueTableViewCell.identifier)
             tableView.delegate = self
             tableView.dataSource = self
+            self.navigationController?.navigationBar.prefersLargeTitles = true
+        
+            self.navigationController?.navigationBar.isTranslucent = true
     }
     
     func server(cameraName: String, cameraNumber: Int) {
@@ -82,6 +87,7 @@ extension AllCamerasViewController: UITableViewDelegate, UITableViewDataSource {
         if liftImages[indexPath.row] != nil {
             cell.liftImage.image = liftImages[indexPath.row]
             cell.liftImage.layer.cornerRadius = 20
+
         }
         
         return cell

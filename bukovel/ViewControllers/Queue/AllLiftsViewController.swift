@@ -26,6 +26,10 @@ class AllLiftsViewController: UIViewController {
         getAllImages()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationItem.largeTitleDisplayMode = .always
+    }
+    
     func setupLiftImages() {
         for _ in 0..<LIFT_NAMES_SERVER.count {
             liftImages.append(nil)

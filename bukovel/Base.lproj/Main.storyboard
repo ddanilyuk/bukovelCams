@@ -12,8 +12,8 @@
             <objects>
                 <navigationController id="S33-bX-OlY" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Черга" image="person.3" catalog="system" id="rDm-0w-HB8"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="KeV-E3-2dN">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="KeV-E3-2dN">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -36,7 +36,7 @@
                     <connections>
                         <segue destination="S33-bX-OlY" kind="relationship" relationship="viewControllers" id="KWw-d3-VqV"/>
                         <segue destination="2wH-RT-tKe" kind="relationship" relationship="viewControllers" id="fmD-hc-pQd"/>
-                        <segue destination="uRM-pZ-aWv" kind="relationship" relationship="viewControllers" id="vcr-62-wiM"/>
+                        <segue destination="AiY-Cw-B4k" kind="relationship" relationship="viewControllers" id="sSW-7h-IpV"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VCN-xR-rEh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -52,13 +52,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="7HZ-3E-nV3">
-                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="7HZ-3E-nV3" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="f1q-9d-9eN"/>
+                            <constraint firstItem="7HZ-3E-nV3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="f1q-9d-9eN"/>
                             <constraint firstItem="7HZ-3E-nV3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qjA-Or-biT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7HZ-3E-nV3" secondAttribute="bottom" id="xKx-mD-pRs"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7HZ-3E-nV3" secondAttribute="trailing" id="xTD-I1-Ksa"/>
@@ -80,8 +80,8 @@
             <objects>
                 <navigationController id="2wH-RT-tKe" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Камери" image="video" catalog="system" id="fqb-Ir-mNP"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="TtG-Kc-NJM">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="TtG-Kc-NJM">
+                        <rect key="frame" x="0.0" y="44" width="375" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -101,7 +101,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HLx-nb-EWQ">
-                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="729"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                             </tableView>
                         </subviews>
@@ -110,7 +110,7 @@
                             <constraint firstItem="HLx-nb-EWQ" firstAttribute="leading" secondItem="w0o-rb-vG1" secondAttribute="leading" id="2TM-2f-JZk"/>
                             <constraint firstItem="w0o-rb-vG1" firstAttribute="bottom" secondItem="HLx-nb-EWQ" secondAttribute="bottom" id="6bx-DU-5Cx"/>
                             <constraint firstItem="w0o-rb-vG1" firstAttribute="trailing" secondItem="HLx-nb-EWQ" secondAttribute="trailing" id="fEK-ii-Tgv"/>
-                            <constraint firstItem="HLx-nb-EWQ" firstAttribute="top" secondItem="w0o-rb-vG1" secondAttribute="top" id="qFa-o7-yGw"/>
+                            <constraint firstItem="HLx-nb-EWQ" firstAttribute="top" secondItem="KjO-8d-veR" secondAttribute="top" id="qFa-o7-yGw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="w0o-rb-vG1"/>
                     </view>
@@ -124,22 +124,6 @@
             <point key="canvasLocation" x="137" y="930"/>
         </scene>
         <!--Карта-->
-        <scene sceneID="IOQ-VD-naE">
-            <objects>
-                <viewController id="uRM-pZ-aWv" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="dwk-aW-wrp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="gki-MC-xOY"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Карта" image="map" catalog="system" id="qhf-6M-3py"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="TEI-FF-0Dl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-1058" y="1690"/>
-        </scene>
-        <!--Lift Detail View Controller-->
         <scene sceneID="qQz-0q-gls">
             <objects>
                 <viewController id="AiY-Cw-B4k" customClass="LiftDetailViewController" customModule="bukovel" customModuleProvider="target" sceneMemberID="viewController">
@@ -148,10 +132,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" canCancelContentTouches="NO" maximumZoomScale="10" translatesAutoresizingMaskIntoConstraints="NO" id="RE4-di-41g">
-                                <rect key="frame" x="0.0" y="88" width="375" height="641"/>
+                                <rect key="frame" x="0.0" y="140" width="375" height="589"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vw7-tm-oZm">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="641"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="589"/>
                                     </imageView>
                                 </subviews>
                                 <constraints>
@@ -175,6 +159,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Vbu-Ji-KSh"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Карта" image="map" catalog="system" id="fxp-Lh-iBc"/>
                     <navigationItem key="navigationItem" id="Rmo-a4-YjS"/>
                     <connections>
                         <outlet property="imageView" destination="vw7-tm-oZm" id="jTG-Rz-d7M"/>
@@ -183,7 +168,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qbt-zX-XCb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1286" y="137"/>
+            <point key="canvasLocation" x="1295" y="137"/>
         </scene>
     </scenes>
     <resources>
@@ -191,4 +176,7 @@
         <image name="person.3" catalog="system" width="72" height="35"/>
         <image name="video" catalog="system" width="64" height="40"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="xkX-GS-Oan"/>
+    </inferredMetricsTieBreakers>
 </document>

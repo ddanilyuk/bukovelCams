@@ -21,6 +21,10 @@ class LiftDetailViewController: UIViewController, UIScrollViewDelegate {
         navigationController?.title = liftNameSeque
         imageView.image = imageSeque
         scrollView.delegate = self
+        if imageSeque == UIImage() {
+            imageView.image = UIImage(named: "map")
+
+        }
     }
     
 
